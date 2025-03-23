@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/dfabdfaa-1387-43e9-88fa-a169befff175)
+![image](https://github.com/user-attachments/assets/1fa900c6-c9a0-4d99-a4ec-81f7b6d04878)
 
 I present to you an ordinary calculator written in Python. With it, you can perform basic operations: addition, subtraction, multiplication, division, square root extraction, and so on.
 
