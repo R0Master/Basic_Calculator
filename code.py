@@ -23,3 +23,5 @@ elif action == '^':
     print('Result:', number**number2)
 elif action == 'root':
     print('Result:', ceil(root(number, number2)) if root(number, number2) * 100 % 100 > 98 else root(number, number2))
+
+# by R0Master
