@@ -1,4 +1,4 @@
-from math import *
+# by R0Master
 
 number = int(input())
 operation = input()
@@ -28,6 +28,4 @@ elif operation == '/' and number2 == 0:
 elif operation == '^':
     print('Result:', number**number2)
 elif operation == 'root':
-    print('Result:', ceil(root(number, number2)) if root(number, number2) * 100 % 100 > 98 else root(number, number2))
-
-# by R0Master
+    print('Result:', rounder(root(number, number2)))
