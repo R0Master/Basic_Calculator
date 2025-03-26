@@ -1,7 +1,7 @@
 from math import *
 
 number = int(input())
-action = input()
+operation = input()
 number2 = int(input())
 
 
@@ -9,19 +9,25 @@ def root(x, y):
     return x ** (1 / y)
 
 
-if action == '+':
-    print('Result:', number + number2)
-elif action == '-':
-    print('Result:', number - number2)
-elif action == '*':
+def rounder(number):
+    if str(number)[2:-10].count('9') >= 4:
+        number = str(a//1+1)[:-2]
+    return number
+
+
+if operation == '+':
+    print(f'Result: {number + number2}')
+elif operation == '-':
+    print(f'Result: {number - number2}')
+elif operation == '*':
     print('Result:', number * number2)
-elif action == '/':
+elif operation == '/':
     print('Result:', number / number2)
-elif action == '/' and number2 == 0:
+elif operation == '/' and number2 == 0:
     print('ERROR! DIVISION BY ZERO!')
-elif action == '^':
+elif operation == '^':
     print('Result:', number**number2)
-elif action == 'root':
+elif operation == 'root':
     print('Result:', ceil(root(number, number2)) if root(number, number2) * 100 % 100 > 98 else root(number, number2))
 
 # by R0Master
