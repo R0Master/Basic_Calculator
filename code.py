@@ -20,12 +20,12 @@ if operation == '+':
 elif operation == '-':
     print(f'Result: {number - number2}')
 elif operation == '*':
-    print('Result:', number * number2)
+    print(f'Result: {number * number2}')
 elif operation == '/':
-    print('Result:', number / number2)
+    print(f'Result: {number / number2}')
 elif operation == '/' and number2 == 0:
     print('ERROR! DIVISION BY ZERO!')
 elif operation == '^':
-    print('Result:', number**number2)
+    print(f'Result: {number**number2}')
 elif operation == 'root':
-    print('Result:', rounder(root(number, number2)))
+    print(f'Result: {rounder(root(number, number2))}')
